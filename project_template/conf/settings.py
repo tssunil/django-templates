@@ -24,7 +24,7 @@ DATABASES = {
 
 ALLOWED_HOSTS = []
 
-TIME_ZONE = 'Europe/France'
+TIME_ZONE = 'Europe/Paris'
 LANGUAGE_CODE = 'fr-fr'
 
 SITE_ID = 1
