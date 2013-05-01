@@ -1,7 +1,3 @@
-import os
-
-PROJECT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
-
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -25,6 +21,7 @@ DATABASES = {
 ALLOWED_HOSTS = []
 
 TIME_ZONE = 'Europe/Paris'
+
 LANGUAGE_CODE = 'fr-fr'
 
 SITE_ID = 1
@@ -40,8 +37,8 @@ STATIC_ROOT = ''
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_DIR, 'static'),
 )
+
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
@@ -65,12 +62,11 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'conf.urls'
+ROOT_URLCONF = '{{ project_name }}.urls'
 
-WSGI_APPLICATION = 'conf.wsgi.application'
+WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.join(PROJECT_DIR, 'templates'),
 )
 
 INSTALLED_APPS = (
