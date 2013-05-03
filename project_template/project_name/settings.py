@@ -13,7 +13,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.',
         'NAME': '',
         'USER': '',
         'PASSWORD': '',
